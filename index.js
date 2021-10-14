@@ -1,7 +1,7 @@
 const express = require('express');
 const multer = require('multer');
 const cors = require('cors');
-const upload = multer({ dest: 'uploads/' });
+const upload = multer({dest: 'uploads/'});
 
 const app = express();
 
@@ -30,5 +30,5 @@ app.get('/preview/:key', cors(), (req, res) => {
 });
 
 var port = process.env.PORT || 3000;
-console.log("port: ",port);
+console.log("port: ", port);
 app.listen(port);
