@@ -30,5 +30,5 @@ app.get('/preview/:key', cors(), (req, res) => {
 });
 
 var port = process.env.PORT || 3000;
-console.log(port);
+console.log("port: ",port);
 app.listen(port);
